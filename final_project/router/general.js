@@ -31,7 +31,7 @@ public_users.get('/author/:author',function (req, res) {
       filteredBooks[key] = books[key];
     }
   });
-
+  
   return res.status(200).send(JSON.stringify(filteredBooks, null, 4));
 });
 
